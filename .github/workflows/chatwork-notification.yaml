@@ -1,0 +1,13 @@
+name: Chatwork Notification Demo
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - uses: mechiru/chatwork@v2
+        with:
+          roomId: ${{ secrets.CHATWORK_ROOM_ID }}
+          token: ${{ secrets.CHATWORK_API_TOKEN }}

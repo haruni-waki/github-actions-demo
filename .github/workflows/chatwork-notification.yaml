@@ -11,6 +11,4 @@ jobs:
         with:
           roomId: ${{ secrets.CHATWORK_ROOM_ID }}
           token: ${{ secrets.CHATWORK_API_TOKEN }}
-          mapping: "{haruni-waki: [To:5419754]@waki}"
-              
-            
+          mapping: "{'haruni-waki': '[To:5419754]@waki'}"
